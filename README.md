@@ -26,7 +26,9 @@ The script read `/var/log/secure` log file which is produced by sshd,then:
     - set the ip that occured more than 10 times, into ipset named with `anti-ssh-crack`
 
 # start
-* run the `/etc/ipset/anti-ssh-crack.sh`. To work continually , modify crontab, append one line :
+* run the `/etc/ipset/anti-ssh-crack.sh`.
+To work continually , modify crontab, append one line :
+
 `* * * * * /etc/ipset/anti-ssh-crack.sh >/dev/null 2>&1`
 
 * check it! run `ipset list anti-ssh-crack`
