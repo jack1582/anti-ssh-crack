@@ -1,5 +1,5 @@
 # intro
-A set of scripts and docs to anti ssh crack behaviour.
+A set of scripts and docs to anti ssh crack attempts behaviour.
 
 # background
 One day, I found that my server logged a lot of ssh connect attempts,of course not by myself.
