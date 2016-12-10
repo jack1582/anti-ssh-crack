@@ -22,7 +22,9 @@ It is very easy, notes omitted. ^_^
 * anti-ssh-crack.sh
 
 Assume you will copy it into `/etc/ipset/anti-ssh-crack.sh`
+
 The script read `/var/log/secure` log file which is produced by sshd,then:
+
     - extract recent logs (today for now. u can modify it easily)
     - collect out the remote ip match `Invalid user` line or `Failed password` line
     - count the occurence of each individual ip 
