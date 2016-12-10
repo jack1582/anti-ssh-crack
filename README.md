@@ -33,5 +33,8 @@ The script read `/var/log/secure` log file which is produced by sshd,then:
 ** CAUTION: ** be sure your ip is not in the list. run cmd `last` to find your self.
 
 * start iptables: `/etc/iptables-fw.sh` 
+** TIPS:** if u ping the ip in the ipset-list, u will find ping says "not permitted", that means it works!. 
+you can make it pingable just by delete the OUTPUT rule in iptables-fw.sh.
 
 * enjoy a cup of coffee, than check your exploit! (by `iptables -nvL`)
+the `-v` will make the counter displayed for each iptables rule.
